@@ -1,17 +1,16 @@
 [![Build Status](https://travis-ci.org/hexojs/hexo.svg?branch=master)](https://travis-ci.org/hexojs/hexo)  [![NPM version](https://badge.fury.io/js/hexo.svg)](http://badge.fury.io/js/hexo) [![Coverage Status](https://coveralls.io/repos/hexojs/hexo/badge.svg?branch=master)](https://coveralls.io/r/hexojs/hexo?branch=master) [![Build status](https://ci.appveyor.com/api/projects/status/hpx3lduqjj2t6uqq/branch/master?svg=true)](https://ci.appveyor.com/project/tommy351/hexo/branch/master) [![Gitter](https://badges.gitter.im/hexojs/hexo.svg)](https://gitter.im/hexojs/hexo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-# 关于这个博客主题 Hexo-Theme-Buer使用
+# 关于这个博客主题 Hexo-Theme 使用
 
 
 随着hexo的版本升级，同时我也想重构我的旧版博客主题，因此在这个月对博客进行了重构加改版，这个仓库存放我的新博客，并且我也会一直使用这个主题。目前基本改版完成，后续可能还会有些细节上的修补。
 
-**本博客访问地址：[不二博客](http://blog.buer.website)**。
+**本博客访问地址：[小神童博客](http://btchandbook.com)**。
 
 ----------
 
-# Hexo-Theme-Buer使用
+# Hexo-Theme 使用
 
-访问我的博客：[不二博客](http://blog.buer.website)
 
 ## 安装
 
@@ -43,12 +42,12 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  开始的地方: http://buer.website
-  # 不二博客主页: /
+  #开始的地方: 
+  # 博客主页: /
   博文目录: /archives
-  不二拙作: /works
+  拙作: /works
   留下点什么: /about
-  不二导航: http://yeechong.coding.me/YeeWebGuide/Guide/index.html
+  #导航: 
   # 静心阅读: /tags
   # 光影之路: /instagram
   # 随笔: /tags/随笔
@@ -65,13 +64,13 @@ favicon: img/favicon.png
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  mail: "mailto:yeechongyeung@gmail.com"
-  github: "https://github.com/yeechongyeung"
+  mail: "mailto:xxx@gmail.com"
+  github: "https://github.com/xxx"
   # zhihu: "#"
-  weibo: "http://weibo.com/elchowyo"
+  #weibo: ""
   # google: "#"
-  twitter: "https://twitter.com/yeungyeechong"
-  linkedin: "http://www.linkedin.com/in/yeechongyeung"
+  #twitter: "#"
+  #linkedin: "#"
   # facebook: "#"
   rss: /atom.xml
   # pinterest: "#"
@@ -171,7 +170,7 @@ friends:
   
 
 #是否开启“关于我”。
-aboutme: Yeechong，化名不二！原由名中带“二”，而后觉自己既不傻又不楞，故自述为不二；家中老母常以乳名“二”唤之，其实为“爱”，故而吾常以“二”自贬。
+aboutme: xxx。
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -213,7 +212,7 @@ baidu_analytics:
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: 海贼到访数
+  site_visit: XX到访数
   page_visit: 本页阅读量
 
 # A标签提示
@@ -249,7 +248,7 @@ permalink:
 
 ```
 
-### 不二使用的格式：
+### 我使用的格式：
 
 ```
 title: Markdown-文章格式
@@ -262,7 +261,7 @@ tags:
 - HTML 标签 
 - HTML 标签
 toc: true 文章目录
-author: 不二
+author: #
 comments: true #是否开启评论true
 original:
 permalink: demo #url中的名字    文件名

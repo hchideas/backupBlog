@@ -155,7 +155,7 @@ friends:
   QQ交谈: tencent://message/?uin=1210861990
   发邮件给我: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=IEFDVEhVSWBRUQ5DT00
   微信公众号: http://ok7yt1lk3.bkt.clouddn.com/640.jpg
-  前端导航: http://yeechong.coding.me/YeeWebGuide/Guide/index.html
+#  前端导航: http://yeechong.coding.me/YeeWebGuide/Guide/index.html
   笑来搜: http://xs.lijinma.com/search
 
 # 微信公众号: http://wx4.sinaimg.cn/mw690/006dZ1Zagy1fbyg2n2rupj30p00by4cn.jpg
@@ -230,10 +230,24 @@ Loading: true
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
 
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+#reward_type: 1
+# 打赏wording
+#reward_wording: '谢谢你请我喝杯咖啡^_^~'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+#alipay: /img/alipayimg.jpg
+# 微信二维码图片地址
+#weixin: /img/weipayimg.jpg
+
+
+# 打赏
+# 请在需要打赏的文章的md文件头部，设置属性reward: true
+
+# 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 1
 # 打赏wording
-reward_wording: '谢谢你请我喝杯咖啡^_^~'
-# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: /img/alipayimg.jpg
+reward_wording1: '你说多少就多少'
+reward_wording2: '赞赏，是对小神童的肯定与鼓励^_^'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/img/alipay.jpg
+alipay: /img/alipay.png
 # 微信二维码图片地址
-weixin: /img/weipayimg.jpg
+weixin: /img/weixin.png
