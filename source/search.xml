@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[博客搭建模块]]></title>
+      <url>https://hchideas.github.io/2017/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%A8%A1%E5%9D%97/</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><!--
+tags:
+    - 随笔
+    - hexo
+http://ok7yt1lk3.bkt.clouddn.com/001.jpg -->
+<h1 id="插入音乐-视频"><a href="#插入音乐-视频" class="headerlink" title="插入音乐/视频"></a>插入音乐/视频</h1><a id="more"></a>
+<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>直接在markdown中插入下面代码</p>
+<pre><code>&lt;video src=&apos;http://ok7yt1lk3.bkt.clouddn.com/001.mp4&apos; type=&apos;video/mp4&apos; controls=&apos;controls&apos;  width=&apos;100%&apos; height=&apos;100%&apos;&gt;
+</code></pre><p></p>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>首先安装两款插件</p>
+<p>打开 Git Shell，切换到 Hexo 目录下，运行如下两条命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo-tag-dplayer --save</div><div class="line"></div><div class="line">npm install hexo-tag-aplayer --save</div></pre></td></tr></table></figure>
+<p>安装到最后 npm 可能会报错，忽视即可。</p>
+<p>安装成功后，在 Markdown 文档中添加 APlayer 和 DPlayer 标签即可</p>
+<p>比如添加如下代码使用 APlayer 和 DPlayer：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% aplayer &quot;梦的翅膀受了伤&quot; &quot;蒋雪儿&quot; &quot;http://ok7yt1lk3.bkt.clouddn.com/M-Teens%20-%20Firefly.mp3&quot; &quot;autoplay&quot; %&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% dplayer &quot;url=http://ok7yt1lk3.bkt.clouddn.com/001.mp4&quot; &quot;api=http://dplayer.daoapp.io&quot; &quot;pic=http://devtest.qiniudn.com/若能绽放光芒.png&quot; &quot;id=9E2E3368B56CDBB4&quot; &quot;loop=yes&quot; &quot;theme=#FADFA3&quot; &quot;autoplay=false&quot; &quot;token=tokendemo&quot; %&#125;</div></pre></td></tr></table></figure>
+<p>api为屏幕上面的弹幕</p>
+<p><strong>使用参数</strong></p>
+<pre><code>{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}
+</code></pre><ul>
+<li>title标题:音乐</li>
+<li>author作者:音乐</li>
+<li>url:音乐文件的url</li>
+<li>picture_url:可选的,音乐图片url</li>
+<li>narrow:可选的,狭窄的风格</li>
+<li>autoplay:可选,播放音乐,不支持的移动浏览器</li>
+<li>lrc:xxx:可选,前缀lrc:领头,文件的url</li>
+</ul>
+<hr>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[场景动词及隐含信息]]></title>
+      <url>https://hchideas.github.io/2017/01/23/%E5%9C%BA%E6%99%AF%E5%8A%A8%E8%AF%8D%E5%8F%8A%E9%9A%90%E5%90%AB%E4%BF%A1%E6%81%AF/</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>本文内容涉及《对象英语语法》第十四章</p>
+</blockquote>
+<a id="more"></a>
+<h5 id="1-1-场景动词"><a href="#1-1-场景动词" class="headerlink" title="1.1 场景动词"></a>1.1 场景动词</h5><p>I <strong>water</strong> the plants.</p>
+<!--插入视频-->
+<video src="http://ok7yt1lk3.bkt.clouddn.com/001.mp4" type="video/mp4" controls="controls" width="100%" height="100%"><br></video>
+
+
+<div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "Caffeine",
+					author: "Jeff Williams",
+					url: "http://ok7yt1lk3.bkt.clouddn.com/M-Teens%20-%20Firefly.mp3",
+					pic: "",
+				}
+			});
+		</script>
+<div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":false,"theme":"#FADFA3","loop":true,"video":{"url":"http://devtest.qiniudn.com/若能绽放光芒.mp4","pic":"http://devtest.qiniudn.com/若能绽放光芒.png"},"danmaku":{"api":"http://dplayer.daoapp.io","id":"9E2E3368B56CDBB4","token":"tokendemo"}});</script>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[博客搭建指南（部分）]]></title>
+      <url>https://hchideas.github.io/2017/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89/</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><p><a href="http://jingyan.baidu.com/article/63f236280da7770208ab3d27.html" target="_blank" rel="external">Hexo 入门指南（三） - 文章 &amp; 草稿</a><br><a id="more"></a></p>
+<pre><code>1、找个地方新建Hexo文件夹
+2、GitHub账号申请
+3、在GitHub软件上设置并用Clone把刚才创建的项目clone到本地。
+4、打开Git Shell运行npm install -g hexo
+5、接着运行 hexo init （clone到本地的那个目录）
+6、npm install
+7、hexo server
+8、http://localhost:4000/（查看）
+9、运行hexo d 出现ERROR Deployer not found:错误然后运行npm install hexo-deployer-git --save即可。
+10、开打赏：reward: true
+11、查看node.js和npm版本：‘node -v’、‘npm -v’
+</code></pre><h1 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h1><ul>
+<li>在hexo/themes/buer/source/js/mobile.js文件中可修改手机显示内容。</li>
+</ul>
+<p><a href="http://www.cnblogs.com/zendu/p/4991090.html" target="_blank" rel="external">html网页代码大全，总结，使用</a></p>
+<p><a href="http://localhost:4000/" target="_blank" rel="external">hexo s</a></p>
+<p><a href="http://jingyan.baidu.com/article/dca1fa6fa1e403f1a5405262.html" target="_blank" rel="external">将GitHub关联到域名上</a></p>
+<p><a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="external">可以用它来备份你的博客到git</a></p>
+<p><a href="https://github.com/Mike-bel/hexo-theme-yilia-optimization" target="_blank" rel="external">添加文章底部版权声明</a></p>
+<h1 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h1><p><a href="https://www.instagram.com/chuanhui_huang/" target="_blank" rel="external">instagram</a></p>
+<p><a href="https://github.com/litten/hexo-theme-yilia/wiki/%E5%90%8C%E6%AD%A5%E4%BD%A0%E7%9A%84instagram%E5%9B%BE%E7%89%87" target="_blank" rel="external">同步instagram图片</a></p>
+<p><a href="https://bobmckay.com/web/simple-tutorial-for-getting-an-instagram-clientid-and-access-token/" target="_blank" rel="external">获取client-id和user-id</a><br><!-- -[Step 2: Authorize your App/Client](https://instagram.com/oauth/authorize/?client_id=1f29ee86be8f4cf5a43888d21ea2f4ab&amp;redirect_uri=http://weibo.com/5703435004/profile?topnav=1&wvr=6&is_all=1&amp;response_type=token)--></p>
+<p><a href="https://github.com/litten/zing-gallery" target="_blank" rel="external">基于node.js的web相册</a></p>
+<blockquote>
+<p><a href="https://github.com/litten" target="_blank" rel="external"><strong>litten GitHub</strong></a></p>
+</blockquote>
+<h1 id="博客资料"><a href="#博客资料" class="headerlink" title="博客资料"></a>博客资料</h1><ul>
+<li><a href="http://www.geekcat.xyz/hexo/vps_dropbox_hexo.html" target="_blank" rel="external">VPS+Dropbox+markeditor打造Hexo完美体验</a></li>
+<li><a href="http://zhujiegao.com/2015/12/06/automatic-backup/" target="_blank" rel="external">自动备份Hexo博客源文件</a></li>
+<li><a href="http://www.codesec.net/view/399534.html" target="_blank" rel="external">轻松玩转feedsky:优化和调教自己博客的RSS</a></li>
+<li><a href="https://github.com/zfanswer/zfanswer.github.io" target="_blank" rel="external">小米饭Hexo(github)</a></li>
+</ul>
+<hr>
+<h5 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h5><blockquote>
+<p><a href="http://litten.me/" target="_blank" rel="external">litten</a><br><a href="http://blog.zfan.me/" target="_blank" rel="external">小米饭</a><br><a href="https://formulahendry.github.io/2016/12/04/hexo-ci/#more" target="_blank" rel="external">formulahendry</a></p>
+<ul>
+<li><a href="https://github.com/formulahendry/formulahendry.github.io" target="_blank" rel="external">formulahendry.github.io</a></li>
+</ul>
+<p><a href="http://threehao.com/about/" target="_blank" rel="external">想做的博客</a></p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>https://hchideas.github.io/2017/01/22/hello-world/</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[留言板]]></title>
+      <url>https://hchideas.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><p><blockquote class="blockquote-center">念念不忘，必有回响</blockquote><br><br></p>
+<blockquote>
+<p>最近访客</p>
+</blockquote>
+<div class="ds-recent-visitors" data-num-item="28" data-avatar-size="42" id="ds-recent-visitors"></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[搜索结果]]></title>
+      <url>https://hchideas.github.io/search/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.hl &#123;</div><div class="line">color: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">$data = simplexml_load_file(&apos;search.xml&apos;);</div><div class="line">define(LEN, 1000);</div><div class="line"></div><div class="line">echo &apos;&lt;div class=&quot;article-inner article-entry&quot;&gt;&lt;h2&gt;Search Results for: &apos; . $_GET[&quot;s&quot;] . &apos;&lt;/h2&gt;&lt;/div&gt;&apos;;</div><div class="line"></div><div class="line">foreach($data-&gt;entry as $a) &#123;</div><div class="line">	// echo $a-&gt;title;</div><div class="line">// echo preg_replace(&quot;/http:\/\/(.*)\//&quot;,&quot;&lt;a href=\&quot;\$&#123;0&#125;\&quot;&gt;\$&#123;0&#125;&lt;/a&gt;&quot;,&quot;$a&quot;);</div><div class="line"></div><div class="line">	$pattern = &quot;/&quot; . $_GET[&quot;s&quot;] . &quot;/i&quot;;</div><div class="line">	$replace = &apos;&lt;span class=hl&gt;&apos; . $_GET[&quot;s&quot;] . &apos;&lt;/span&gt;&apos;;</div><div class="line">	// echo $pattern . &quot;&lt;BR&gt;&quot;;</div><div class="line">	// echo $replace . &quot;&lt;BR&gt;&quot;;</div><div class="line"></div><div class="line">	if(preg_match($pattern, $a-&gt;title)  or preg_match($pattern, $a-&gt;content)) &#123;</div><div class="line">		echo &apos;&lt;div class=&quot;article-inner article-entry&quot; itemprop=&quot;articleBody&quot;&gt;&lt;a href=&apos; . $a-&gt;url . &apos;&gt;&lt;h3&gt;&apos; . preg_replace($pattern, $replace, $a-&gt;title) . &apos;&lt;/h3&gt;&lt;/a&gt;&apos;;</div><div class="line">		$hl_keys = preg_replace($pattern, $replace, $a-&gt;content);</div><div class="line"></div><div class="line">		$strpos = stripos($a-&gt;content,  $_GET[&apos;s&apos;]);</div><div class="line">		$len = min(LEN, strlen($a-&gt;content) - $strpos - 1);</div><div class="line"></div><div class="line">		echo &apos;&lt;p&gt;&apos; . mb_strcut($hl_keys, $strpos, $len, &quot;utf-8&quot;) . &apos; &lt;span class=article-more-link&gt;&lt;a href=&apos;. $a-&gt;url .&apos;&gt; Detial&gt;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&apos;;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我的作品]]></title>
+      <url>https://hchideas.github.io/works/index.html</url>
+      <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><h1 id="Extensions-for-Visual-Studio-Code"><a href="#Extensions-for-Visual-Studio-Code" class="headerlink" title="Extensions for Visual Studio Code"></a>Extensions for Visual Studio Code</h1><h2 id="Code-Runner"><a href="#Code-Runner" class="headerlink" title="Code Runner"></a><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank" rel="external">Code Runner</a></h2><a id="more"></a>
+<blockquote>
+<p>Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, C# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" alt="Code Runner"></p>
+<h2 id="Auto-Close-Tag"><a href="#Auto-Close-Tag" class="headerlink" title="Auto Close Tag"></a><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" target="_blank" rel="external">Auto Close Tag</a></h2><blockquote>
+<p>Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/formulahendry/vscode-auto-close-tag/master/images/usage.gif" alt="Auto Close Tag"></p>
+<h2 id="Auto-Rename-Tag"><a href="#Auto-Rename-Tag" class="headerlink" title="Auto Rename Tag"></a><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank" rel="external">Auto Rename Tag</a></h2><blockquote>
+<p>Automatically rename paired HTML/XML tag</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/formulahendry/vscode-auto-rename-tag/master/images/usage.gif" alt="Auto Rename Tag"></p>
+<h2 id="Azure-IoT-Toolkit"><a href="#Azure-IoT-Toolkit" class="headerlink" title="Azure IoT Toolkit"></a><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.azure-iot-toolkit" target="_blank" rel="external">Azure IoT Toolkit</a></h2><blockquote>
+<p>Everything you need for the Azure IoT development: Interact with Azure IoT Hub; IoT Device Management; Discover Ethernet, USB serial, WiFi connected devices</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/formulahendry/vscode-azure-iot-toolkit/master/images/monitor.gif" alt="Azure IoT Toolkit"></p>
+]]></content>
+    </entry>
+    
+  
+</search>
